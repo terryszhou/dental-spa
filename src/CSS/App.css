@@ -61,3 +61,8 @@ h1 {
 .serviceStyle:hover {
     text-decoration: underline;
 }
+
+.serviceDesc {
+    text-align: justify;
+    text-indent: 50px;;
+}

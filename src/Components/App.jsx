@@ -31,6 +31,9 @@ export const App = () => {
                 <Route 
                     path="/services/:id"
                     render={props => {
+                        console.log(...props.match.params.id)
+                        const service = dentalServices.find(e => e.id.toString() === props.match.params.id)
+                        props = {...props, ...service}
                         return <Service {...props} />
                     }}
                 />
