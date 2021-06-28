@@ -9,8 +9,7 @@ export const Header = () => {
                         to="/" 
                         className="linkStyle" 
                         activeClassName="clickedLink" 
-                        exact>
-                            Go to Home Page
+                        exact> Go to Home Page
                     </NavLink>
                 </li>
                 <li>
@@ -18,8 +17,7 @@ export const Header = () => {
                         to="/services" 
                         className="linkStyle" 
                         activeClassName="clickedLink" 
-                        exact>
-                            See Our Services
+                        exact> See Our Services
                     </NavLink>
                 </li>
                 <li>
@@ -27,8 +25,7 @@ export const Header = () => {
                         to="/contact" 
                         className="linkStyle" 
                         activeClassName="clickedLink" 
-                        exact>
-                            Contact Us!
+                        exact>Contact Us!
                     </NavLink>
                 </li>
             </ul>
