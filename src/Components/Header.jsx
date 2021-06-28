@@ -4,27 +4,33 @@ export const Header = () => {
     return (
         <nav>
             <ul>
-                <NavLink 
-                    to="/" 
-                    className="linkStyle" 
-                    activeClassName="clickedLink" 
-                    exact>
-                        <li>Go to Home Page</li>
-                </NavLink>
-                <NavLink 
-                    to="/services" 
-                    className="linkStyle" 
-                    activeClassName="clickedLink" 
-                    exact>
-                        <li>See Our Services</li>
-                </NavLink>
-                <NavLink 
-                    to="/contact" 
-                    className="linkStyle" 
-                    activeClassName="clickedLink" 
-                    exact>
-                        <li>Contact Us!</li>
-                </NavLink>
+                <li>
+                    <NavLink 
+                        to="/" 
+                        className="linkStyle" 
+                        activeClassName="clickedLink" 
+                        exact>
+                            Go to Home Page
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink 
+                        to="/services" 
+                        className="linkStyle" 
+                        activeClassName="clickedLink" 
+                        exact>
+                            See Our Services
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink 
+                        to="/contact" 
+                        className="linkStyle" 
+                        activeClassName="clickedLink" 
+                        exact>
+                            Contact Us!
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     )

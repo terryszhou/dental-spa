@@ -1,21 +1,20 @@
 import '../css/App.css'
+import { useState } from 'react'
+
 import { Home } from './Home'
 import { Contact } from './Contact'
 import { Services } from './Services'
 import { Header } from './Header'
+import { serviceDetails } from '../data/serviceDetails'
+import { Service } from './Service'
+
 import {
     BrowserRouter as Router,
     Route
 } from 'react-router-dom'
 
 export const App = () => {
-    const dentalServices = [
-        "Deep Cleaning",
-        "Filling",
-        "Gum Massage",
-        "Root Canal",
-        "Oral Mud Bath"
-    ]
+    const [dentalServices] = useState(serviceDetails)
 
     return (
         <Router>
@@ -26,8 +25,14 @@ export const App = () => {
                     component={Home}
                 />
                 <Route 
-                    path="/services" 
+                    exact path="/services" 
                     render={() => <Services dentalServices={dentalServices}/>}
+                />
+                <Route 
+                    path="/services/:id"
+                    render={props => {
+                        return <Service {...props} />
+                    }}
                 />
                 <Route 
                     path="/contact" 

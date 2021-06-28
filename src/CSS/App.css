@@ -11,34 +11,37 @@ nav {
     display: flex;
     align-items: center;
     background-color: rgb(88,88,88);
-    box-shadow: 0 0 25px 0 black;
+    box-shadow: 0 0 15px 0 black;
 }
 
 nav li {
     display: inline;
     padding: 50px;
-    color: rgb(240,240,240);
     font-size: 20px;
 }
 
 .linkStyle {
+    color: rgb(180,180,180);
     text-decoration: none;
     transition-duration: 0.2s;
 }
 
 .linkStyle:hover {
-    opacity: 70%;
+    color: rgb(240,240,240);
+    text-decoration: underline;
+    text-decoration-color: rgb(240,240,240);
     transition-duration: 0.2s;
 }
 
 .clickedLink {
+    color: rgb(240,240,240);
     text-decoration: underline;
     text-decoration-color: rgb(240,240,240);
 }
 
 main {
     margin-top: 40px;
-    padding: 20px;
+    padding: 50px;
 }
 
 h1 {
@@ -47,4 +50,14 @@ h1 {
 
 .serviceList {
     text-align: center;
+    padding: 50px;
+}
+
+.serviceStyle {
+    text-decoration: none;
+    color: black;
+}
+
+.serviceStyle:hover {
+    text-decoration: underline;
 }
